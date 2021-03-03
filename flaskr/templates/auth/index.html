@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scramble a URL</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Utility.js"></script>
+</head>
+<body>
+<div class="d-flex justify-content-center">
+    <div class="page-header"><h1>Site for Scrambling/Obfuscating URLs to Share</h1></div>
+    <a href="https://github.com/tn16jv" target="_blank">Github</a>
+</div>
+
+<div class="d-flex justify-content-center">
+  <div class="form-group">
+    <label for="longurl">Enter a URL to shorten/scramble:</label>
+    <input size="60" type="url" class="form-control" name="longuri" id="longurl" aria-describedby="emailHelp" placeholder="Enter a URL">
+      <button class="btn btn-info" onclick="postURL()" id="submitButton">Submit</button>
+  </div>
+</div>
+
+<div id="ajaxArea" class="container overflow-auto bg-light mb-4" style="max-height: 40vh"></div>
+
+<div class="d-flex justify-content-center">
+    <p class="font-weight-bold">Your recent scrambled URLs:</p>
+</div>
+<div id="pastUrlsArea" class="container overflow-auto bg-light text-dark" style="max-height: 50vh">
+</div>
+</body>
+</html>
